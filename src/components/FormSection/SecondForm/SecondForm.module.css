@@ -1,0 +1,390 @@
+.secondForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.secondFormInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* width: 90%; */
+  width: 100%;
+  /* height: 10rem; */
+}
+
+.secondFormInfo h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: hsl(213, 96%, 18%);
+
+}
+
+.secondFormInfo p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: hsl(231, 11%, 63%);
+}
+
+.secondFormSection{
+  /* width: 90%; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.planSelectionContainer{
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  /* width: 90%; */
+}
+
+.planCard {
+  position: relative;
+}
+
+  .planCard input[type='radio'] {
+    appearance: none;
+    width: 18rem;
+    height: 22rem;
+    border-radius: 1rem;
+    /* background-color: aqua; */
+    border: 1px solid hsl(229, 24%, 87%);
+    transition: all 0.3s;
+  }
+
+.planCard input[type='radio']:checked {
+  background-color: hsl(217, 100%, 97%);
+  border-color: hsl(243, 100%, 62%);
+
+}
+
+.planCard input[type='radio']:hover {
+  cursor: pointer;
+  border-color: hsl(243, 100%, 62%);
+
+}
+
+.planCard label {
+  cursor: pointer;
+  position: absolute;
+  left: 2rem;
+  top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.planCard label img {
+  width: 5rem;
+}
+
+.planInfo h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: hsl(213, 96%, 18%);
+}
+
+.planPrice {
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: hsl(231, 11%, 63%);
+}
+
+
+
+
+
+.planSwitch {
+  margin: 0 1rem;
+}
+
+.selectPlanSection {
+  /* background-color: aqua; */
+  background-color: hsl(217, 100%, 97%);
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.planName {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: hsl(231, 11%, 63%);
+}
+
+.freeTrial {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  color: hsl(213, 96%, 18%);
+}
+
+
+
+.ButtonSection {
+  /* background-color: aquamarine; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 90%; */
+  margin-top: 2rem;
+}
+
+.go-back__btn {
+  padding: 1rem 1.4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  color: hsl(231, 11%, 63%);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.go-back__btn:hover {
+  color: hsl(213, 96%, 18%);
+}
+
+.next-step__btn {
+  padding: 1rem 1.4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  border: none;
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.next-step__btn:hover {
+  transform: translateY(-2px);
+}
+
+
+/* RESPONSIVENESS */
+
+ /* 1424px: Laptop */
+ @media (max-width: 89em){
+
+  .planSelectionContainer{
+    gap: 2rem;
+
+  }
+  .secondForm {
+    gap: 4rem;
+  }
+  .secondFormInfo h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: hsl(213, 96%, 18%);
+  
+  }
+
+  .secondFormInfo p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: hsl(231, 11%, 63%);
+  }
+  .planCard label img {
+    width: 4rem;
+  }
+
+  .go-back__btn {
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+
+  }
+
+  
+  .next-step__btn {
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+ 
+  }
+
+  
+  .planCard input[type='radio'] {
+
+    width: 15rem;
+    height: 20rem;
+
+  }
+  
+ }
+
+
+ /* 1008px: Laptop */
+ @media (max-width: 63em){
+
+  .planCard input[type='radio'] {
+    appearance: none;
+    width: 13rem;
+    height: 18rem;
+    border-radius: 1rem;
+    /* background-color: aqua; */
+    border: 1px solid hsl(229, 24%, 87%);
+    transition: all 0.3s;
+  }
+
+  .planCard label {
+    cursor: pointer;
+    position: absolute;
+    left: 2rem;
+    top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .planSelectionContainer{
+    gap: 1rem;
+
+  }
+  
+ }
+
+ /* 944px: Small Laptop */
+ @media (max-width: 59em){
+
+  .secondForm {
+    gap: 3rem;
+  }
+
+  .planSelectionContainer{
+    gap: 4rem;
+
+  }
+
+  .secondFormInfo h1 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: hsl(213, 96%, 18%);
+  
+  }
+
+  .secondFormInfo p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: hsl(231, 11%, 63%);
+  }
+
+  .go-back__btn {
+    padding: 1rem 1.2rem;
+    font-size: 1.4rem;
+
+  }
+
+  
+  .next-step__btn {
+    padding: 1rem 1.2rem;
+    font-size: 1.4rem;
+ 
+  }
+  
+  .planCard input[type='radio'] {
+
+    width: 15rem;
+    height: 20rem;
+
+  }
+
+  .planCard label {
+    cursor: pointer;
+    position: absolute;
+    left: 2rem;
+    top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .ButtonSection{
+    position: absolute  ;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background-color: hsl(231, 100%, 99%);
+  }
+}
+
+
+/* 816px: Tablet */
+@media (max-width: 51em){
+
+  .planSelectionContainer{
+    gap: 2rem;
+
+  }
+
+  .planCard input[type='radio'] {
+
+    width: 13rem;
+    height: 17rem;
+
+  }
+
+  .planCard label {
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    top: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+}
+
+
+@media(max-width:35em){
+  .secondForm {
+    gap: 2rem;
+  }
+  .planSelectionContainer{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+    /* width: 90%; */
+  } 
+
+  .secondFormSection{
+    /* width: 90%; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .planCard input[type='radio'] {
+    appearance: none;
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem;
+    /* background-color: aqua; */
+    border: 1px solid hsl(229, 24%, 87%);
+    transition: all 0.3s;
+  }
+
+  .planCard label {
+    cursor: pointer;
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: start;
+  }
+}

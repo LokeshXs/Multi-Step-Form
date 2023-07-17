@@ -1,0 +1,137 @@
+.FormProgress-Section {
+  height: 100%;
+  background: url("../../assets/bg-sidebar-desktop.svg");
+  border-radius: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* margin-right: 2rem; */
+}
+
+.formProgressStepsContainer {
+  padding: 3rem 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+}
+
+.formProgressStep {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.formStepNumber {
+  border: 2px solid hsl(231, 100%, 99%);
+  width: 2rem;
+  height: 2rem;
+  padding: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: hsl(231, 100%, 99%);
+  transition: all 0.3s;
+}
+
+.formStepInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formStepInfo p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: hsl(229, 24%, 87%);
+}
+
+.formStepInfo h3 {
+  font-size: 2.4rem;
+  letter-spacing: 1.2px;
+  color: hsl(231, 100%, 99%);
+  font-weight: 500;
+}
+
+.active {
+  background-color: hsl(206, 94%, 87%);
+  color: #000;
+  border-color: hsl(206, 94%, 87%);
+}
+
+
+/* RESPONSIVENESS */
+
+/* 1424px: Laptop */
+@media (max-width: 89em){
+  .formStepInfo h3 {
+    font-size: 2rem;
+    letter-spacing: 1.2px;
+  }
+
+  .formStepInfo p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: hsl(229, 24%, 87%);
+  }
+
+  .formStepNumber {
+
+    font-size: 1.6rem;
+
+  }
+}
+
+
+/* 944px: small laptop */
+@media (max-width: 59em){
+  /* .formStepInfo h3 {
+    font-size: 1.8rem;
+    letter-spacing: 1.2px;
+  }
+
+  .formStepInfo p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: hsl(229, 24%, 87%);
+  } */
+
+  .formStepNumber {
+
+    font-size: 1.4rem;
+
+  }
+
+  .formProgressStep {
+    gap: 1.4rem;
+  }
+
+  .formStepInfo p, .formStepInfo h3 {
+display: none;
+  }
+
+  .formProgressStepsContainer {
+    /* padding: 3rem 3rem 0 3rem; */
+    display: flex;
+    flex-direction: row ;
+    /* gap: 4rem; */
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .FormProgress-Section {
+    height: 100%;
+    background: url("../../assets/bg-sidebar-desktop.svg");
+    border-radius: 0rem;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: bottom;
+    /* margin-right: 2rem; */
+  }
+
+}

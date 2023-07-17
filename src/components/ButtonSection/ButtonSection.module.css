@@ -1,0 +1,40 @@
+.ButtonSection{
+/* background-color: aquamarine; */
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 90%;
+margin-top: 6rem;
+}
+
+.go-back__btn{
+  padding: 1rem 1.4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  color: hsl(231, 11%, 63%);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.go-back__btn:hover{
+color:hsl(213, 96%, 18%) ;
+}
+
+.next-step__btn{
+  padding: 1rem 1.4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  border: none;
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.next-step__btn:hover{
+ transform: translateY(-2px);
+}

@@ -1,0 +1,27 @@
+.FormSection {
+  /* background-color: beige; */
+  border-radius: 2rem;
+  /* margin-left: 2rem; */
+  
+  padding: 4rem;
+}
+
+
+/* 1200px: Laptop */
+@media (max-width: 75em){
+  .FormSection {
+    
+    padding: 2rem;
+  }
+}
+
+/* 944px: Small Laptop */
+@media (max-width: 59em) {
+  .FormSection {
+    width: 90%;
+    margin: 0 auto ;
+    margin-top: -5rem;
+    padding: 2rem;
+    background-color: hsl(231, 100%, 99%);
+  }
+}

@@ -1,0 +1,39 @@
+.thankYouSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.thankYouContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankYouContainer h1 {
+  font-size: 5rem;
+  color: hsl(213, 96%, 18%);
+}
+
+.thankYouContainer p {
+  font-size: 2rem;
+  color: hsl(231, 11%, 63%);
+  line-height: 1.4;
+}
+
+
+/* 944px: Small Laptop */
+@media (max-width: 59em) {
+  .thankYouContainer h1 {
+    font-size: 3rem;
+  }
+
+  .thankYouContainer p {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+
+:root{
+  marineBlue:hsl(213, 96%, 18%);
+  colorGrey: hsl(231, 11%, 63%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu',sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+body #root{
+
+  background-color: hsl(206, 94%, 87%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+
+/* 944px: Small Laptop */
+@media (max-width: 59em) {
+  body #root {
+align-items: start;
+
+  }
+}

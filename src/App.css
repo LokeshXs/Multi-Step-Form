@@ -1,0 +1,38 @@
+.main-form-section {
+  width: 80%;
+  min-height: 80%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: 40rem 1fr;
+  padding: 2rem;
+  margin: 4rem;
+
+}
+
+
+/* 1200px: Laptop */
+@media (max-width: 75em) {
+  .main-form-section {
+    grid-template-columns: 30rem 1fr;
+
+  }
+}
+
+
+/* 944px: Small Laptop */
+@media (max-width: 59em) {
+  .main-form-section {
+    width: 100%;
+    min-height: 70%;
+    background-color: hsl(206, 94%, 87%);
+    border-radius: 0rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20rem 1fr;
+    padding: 0rem;
+    margin: 0;
+    /* margin: 4rem; */
+
+  }
+}

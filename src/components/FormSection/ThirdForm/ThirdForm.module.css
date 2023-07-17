@@ -1,0 +1,198 @@
+.thirdForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.thirdFormInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  height: 10rem;
+}
+
+.thirdFormInfo h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: hsl(213, 96%, 18%);
+
+}
+
+.thirdFormInfo p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: hsl(231, 11%, 63%);
+}
+
+
+.thirdFormSection {
+  /* margin-top: 4rem; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.addOnContainer input[type="checkbox"] {
+  height: 2rem;
+  width: 2rem;
+  opacity: 0.5;
+}
+
+.addOnContainer input[type="checkbox"]:checked {
+  opacity: 1;
+}
+
+
+.addOnContainer {
+  padding: 1.5rem;
+  /* background-color: aqua; */
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 1rem;
+  border: 1px solid hsl(229, 24%, 87%);
+  transition: all 0.3s;
+
+}
+
+.addOnContainer:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+  cursor: pointer;
+}
+
+.addOnLabel {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.addOnInfoContainer h3 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: hsl(213, 96%, 18%);
+}
+
+.addOnInfoContainer p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: hsl(231, 11%, 63%);
+}
+
+.addOnPriceContainer p {
+  font-size: 1.8rem;
+  color: hsl(243, 100%, 62%);
+}
+
+
+.ButtonSection {
+  /* background-color: aquamarine; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 90%; */
+  margin-top: 6rem;
+}
+
+.go-back__btn {
+  padding: 1rem 1.4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  color: hsl(231, 11%, 63%);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.go-back__btn:hover {
+  color: hsl(213, 96%, 18%);
+}
+
+.next-step__btn {
+  padding: 1rem 1.4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  border: none;
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.next-step__btn:hover {
+  transform: translateY(-2px);
+}
+
+/* 944px: Small Laptop */
+@media (max-width: 59em){
+  .thirdForm {
+
+    gap: 3rem;
+
+  }
+
+  .thirdFormInfo h1 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: hsl(213, 96%, 18%);
+  
+  }
+
+  
+.thirdFormInfo p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: hsl(231, 11%, 63%);
+}
+
+  .ButtonSection{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background-color: hsl(231, 100%, 99%);
+  }
+
+  .addOnInfoContainer h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: hsl(213, 96%, 18%);
+  }
+
+  .addOnInfoContainer p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    color: hsl(231, 11%, 63%);
+  }
+  
+  .addOnPriceContainer p {
+    font-size: 1.4rem;
+    color: hsl(243, 100%, 62%);
+  }
+
+  .go-back__btn {
+    font-size: 1.4rem;
+  }
+  
+  .go-back__btn:hover {
+    color: hsl(213, 96%, 18%);
+  }
+  
+  .next-step__btn {
+    font-size: 1.4rem;
+  }
+}
